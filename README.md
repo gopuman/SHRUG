@@ -1,8 +1,35 @@
-SHRUG is simple Python library that enables users to anonymize packet traces. As of the current release, SHRUG supports the following anonymization algorithms:
+SHRUG is simple Python library that enables users to anonymize source and destination IP addresses in packet traces. As of the current release, SHRUG supports the following anonymization algorithms:
 
-- Randomizer algorithm
-- Prefix Preserving algorithm (Using [CryptoPAn](https://github.com/Yawning/cryptopan))
-- BlackMarker algorithm
-- Permutation algorithm
-- Truncation algorithm
-- Reverse Truncation algorithm
+1. Randomizer algorithm (**randomizer**)
+2. Prefix Preserving algorithm (**prefAnon**) [Using [CryptoPAn](https://github.com/Yawning/cryptopan)]
+3. BlackMarker algorithm (**blackMarker**)
+4. Permutation algorithm (**permutation**)
+5. Truncation algorithm (**truncation**)
+6. Reverse Truncation algorithm (**revTruncation**)
+
+## Usage
+- Install the package using pip
+```
+pip install SHRUG-anon
+```
+
+- Import the module and the anonymization methods
+```
+>>> from SHRUG_anon import anonalgos
+```
+
+- The read_from method can be used to read a .pcap or .tcpdump file
+```
+>>> input_pks = anonalgos.read_from("/path/to/pcap/tcpdump/file")
+```
+
+- Use one of the 6 anonymization algorithms on the packet capture stored in the previous step, and store the anonymized packets.
+```
+>>> anonalgos.randomizer(input_pks)
+>>> anonalgos.write_to("/path/to/anonymized/packets/.pcap/.tcpdump")
+```
+
+- NOTE: The truncation and reverse truncation algorithms require a second parameter i.e., number of bits to be truncated.
+```
+>>> anonalgos.truncation(input_pks, 12)
+```
