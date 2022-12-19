@@ -1,0 +1,12 @@
+CHANGELOG.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/SHRUG_anon/__init__.py
+src/SHRUG_anon/anonalgos.py
+src/SHRUG_anon.egg-info/PKG-INFO
+src/SHRUG_anon.egg-info/SOURCES.txt
+src/SHRUG_anon.egg-info/dependency_links.txt
+src/SHRUG_anon.egg-info/requires.txt
+src/SHRUG_anon.egg-info/top_level.txt

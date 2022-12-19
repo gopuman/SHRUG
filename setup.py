@@ -2,8 +2,8 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='SHRUG',
-    version='0.0.1',
+    name='SHRUG_anon',
+    version='0.0.3',
     license='MIT',
     author=["Gopal Nambiar",
             "Shreyas Madhav",
