@@ -1,4 +1,4 @@
-SHRUG is simple Python library that enables users to anonymize source and destination IP addresses in packet traces. As of the current release, SHRUG supports the following anonymization algorithms:
+SHRUG is a simple Python library that lets users anonymize source and destination IP addresses in packet traces. As of the current release, SHRUG supports the following anonymization algorithms:
 
 1. Randomizer algorithm (**randomizer**)
 2. Prefix Preserving algorithm (**prefAnon**) [Using [CryptoPAn](https://github.com/Yawning/cryptopan)]
@@ -23,13 +23,13 @@ pip install SHRUG-anon
 >>> input_pks = anonalgos.read_from("/path/to/pcap/tcpdump/file")
 ```
 
-- Use one of the 6 anonymization algorithms on the packet capture stored in the previous step, and store the anonymized packets.
+- Use one of the six anonymization algorithms on the packet capture stored in the previous step, and store the anonymized packets.
 ```
 >>> anonalgos.randomizer(input_pks)
 >>> anonalgos.write_to("/path/to/anonymized/packets/.pcap/.tcpdump")
 ```
 
-- NOTE: The truncation and reverse truncation algorithms require a second parameter i.e., number of bits to be truncated.
+- NOTE: The truncation and reverse truncation algorithms require a second parameter, i.e., the number of bits to be truncated.
 ```
 >>> anonalgos.truncation(input_pks, 12)
 ```
