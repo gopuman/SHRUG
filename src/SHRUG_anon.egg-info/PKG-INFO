@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
-Name: SHRUG
+Name: SHRUG-anon
 Version: 0.0.1
 Home-page: https://github.com/gopuman/SHRUG
 Author: ['Gopal Nambiar', 'Shreyas Madhav', 'Ruthuvikas Ravikumar']
-Author-email: gopalnambiar2@gmail.com
+Author-email: gnambiar@ucdavis.edu
 License: MIT
 Keywords: Anonymization project

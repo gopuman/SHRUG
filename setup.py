@@ -2,14 +2,14 @@ from setuptools import setup, find_packages
 
 
 setup(
-    name='SHRUG',
+    name='SHRUG_anon',
     version='0.0.1',
     license='MIT',
     author=["Gopal Nambiar",
 	    "Shreyas Madhav",
 	    "Ruthuvikas Ravikumar",
 	   ],
-    author_email='gopalnambiar2@gmail.com',
+    author_email='gnambiar@ucdavis.edu',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     url='https://github.com/gopuman/SHRUG',
