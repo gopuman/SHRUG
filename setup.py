@@ -9,7 +9,7 @@ setup(
             "Shreyas Madhav",
             "Ruthuvikas Ravikumar",
            ],
-    author_email='gopalnambiar2@gmail.com',
+    author_email='gnambiar@ucdavis.edu',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     url='https://github.com/gopuman/SHRUG',
