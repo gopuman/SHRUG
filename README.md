@@ -33,3 +33,8 @@ pip install SHRUG-anon
 ```
 >>> anonalgos.truncation(input_pks, 12)
 ```
+
+## Authors
+- [Shreyas Madhav](https://github.com/shreyas-madhav)
+- [Ruthuvikas Ravikumar](https://github.com/Ruthuvikas)
+- [Gopal Nambiar](https://github.com/gopuman)
